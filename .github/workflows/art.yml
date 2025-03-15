@@ -1,0 +1,20 @@
+name: Python application
+
+env:
+  - ART_NAME = irvy
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the code
+      uses: actions/checkout@v2
+    - name: Upload artifact
+      uses: actions/upload-artifact
+      with:
+        name: ${{ env.ART_NAME }}
+          
