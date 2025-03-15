@@ -1,7 +1,7 @@
 name: art
 
 env:
-  - ART_NAME = irvy
+  ART_NAME = irvy
 
 on: [push]
 
