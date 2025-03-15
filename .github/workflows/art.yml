@@ -17,7 +17,7 @@ jobs:
       uses: actions/upload-artifact@v1.0.0
       with:
         name: ${{ env.ART_NAME }}
-        path: ./${{ env.ART_NAME }}
+        path: ./foo
 
   job2:
     name: job2 
